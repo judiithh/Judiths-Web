@@ -12,8 +12,8 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoYQhKo2uQrmMIIAitrQDoezWG48I6ZK4xTg&s" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href="https://rowdyhacks.org/_next/image?url=%2Fimg%2Fteam%2FJibril.webp&w=1080&q=100" target="_blank">
+          <img src="https://rowdyhacks.org/_next/image?url=%2Fimg%2Fteam%2FJibril.webp&w=1080&q=100" className="logo react" alt="React logo" />
         </a>
       </div>
       <h1>I AM JUDITH</h1>
