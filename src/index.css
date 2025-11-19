@@ -3,9 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* Use a consistent light-pink background with dark text for contrast */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #213547; /* dark text for contrast on pink */
+  background-color: #ffe6f0; /* soft light pink */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,10 +23,20 @@ a:hover {
   color: #FF69B4;
 }
 
+/* sensible defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  align-items: center; /* vertical centering for flex */
+  justify-content: center; /* horizontal centering for flex */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -42,7 +53,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* light button background so dark text remains readable on pink */
+  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -54,15 +66,4 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #FF69B4;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/* keep same pink background in all modes; nothing to override for prefers-color-scheme */

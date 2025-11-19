@@ -12,10 +12,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #FF69B4aa);
+  filter: drop-shadow(0 0 2em #57036aaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #FF69B4aa);
+  filter: drop-shadow(0 0 2em #48025ff5);
 }
 
 @keyframes logo-spin {
@@ -38,5 +38,6 @@
 }
 
 .read-the-docs {
-  color: #888;
+  /* muted dark text that contrasts the pink background */
+  color: rgba(33,53,71,0.6);
 }
