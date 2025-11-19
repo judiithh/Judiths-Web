@@ -16,7 +16,7 @@ function App() {
           <img src="/assets/bwme.png" className="logo react" alt="bwme" />
         </a>
       </div>
-      <h1>I AM JIBRILLLLLLL</h1>
+      <h1>I AM JUDITH</h1>
 
 
     </>
