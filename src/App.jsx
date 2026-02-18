@@ -22,18 +22,21 @@ function App() {
 }
 
 export default App; */
-
 import "./App.css";
+import { Routes, Route } from "react-router";
 import { NavbarExample } from "./Components/Navbar";
+import Home from "./Home";
+import About from "./About";
+
 export default function App() {
   return (
-    <div className="page">
+    <>
       <NavbarExample />
-      <h1>I AM JUDITH</h1>
-      <p>Welcome to my website.</p>
-      <img src="/assets/bwme2.PNG" alt="bwme2" className="aura" />
 
-
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </>
   );
 }
