@@ -4,6 +4,24 @@
   padding: 2rem;
   text-align: center;
 }
+body{
+  margin: 0;
+}
+.aura {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 60%;
+  height: auto;
+  opacity: 0.5;
+  animation: aura-pulse infinite 3s ease-in-out;
+}
+@keyframes aura-pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0.3; }
+}
 
 .logo {
   height: 6em;

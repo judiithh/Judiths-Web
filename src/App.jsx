@@ -21,8 +21,8 @@ function App() {
   )
 }
 
-export default <App>
-*/
+export default App; */
+
 import "./App.css";
 
 export default function App() {
@@ -30,7 +30,9 @@ export default function App() {
     <div className="page">
       <h1>I AM JUDITH</h1>
       <p>Welcome to my website.</p>
-      <img src="/assets/bwme2.png" alt="bwme2" />
+      <img src="/assets/bwme2.PNG" alt="bwme2" className="aura" />
+
+
     </div>
   );
 }
