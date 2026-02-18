@@ -3,10 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Use a consistent light-pink background with dark text for contrast */
   color-scheme: light dark;
   color: #213547; /* dark text for contrast on pink */
-  background-color: #ffe6f0; /* soft light pink */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,10 +33,12 @@ html, body {
 body {
   margin: 0;
   display: flex;
-  align-items: center; /* vertical centering for flex */
-  justify-content: center; /* horizontal centering for flex */
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #ffe6f0 !important; /* soft light pink — !important to override Bootstrap */
+  color: #213547 !important;
 }
 
 h1 {
