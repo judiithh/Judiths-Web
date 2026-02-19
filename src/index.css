@@ -40,7 +40,13 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #ffe6f0 !important; /* soft light pink — !important to override Bootstrap */
+  background: radial-gradient(
+  circle at center,
+  #ffe6f0 40%,
+  #ffb3d1 70%,
+  #eb96bc 100%
+) !important;
+ /* soft light pink — !important to override Bootstrap */
   color: #213547 !important;
 }
 
