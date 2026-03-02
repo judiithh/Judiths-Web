@@ -33,5 +33,77 @@
   margin: 0;
 }
 
+.about-text {
+  /* place the box on the left and center it vertically initially,
+     but allow it to scroll with the page (not fixed) */
+  position: absolute; /* positioned relative to .page so it scrolls */
+  left: -37rem;             /* distance from the left edge; adjust as needed */
+  top: 50vh;             /* vertically centered in the viewport initially */
+  transform: translateY(-50%); /* vertical center relative to the viewport offset */
+
+  /* responsive width: min/max so it scales on small/large screens */
+  width: clamp(240px, 30vw, 500px);
+  padding: 20px;
+  overflow: auto; /* add scrollbars if text is long */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content inside the box */
+  text-align: left;        /* usually better for paragraphs on the left side */
+  z-index: 5; /* stand above other content if needed */
+}
+
+/* responsive: on very small screens put the text in flow so it doesn't cover content */
+@media (max-width: 640px) {
+  .about-text {
+    position: static;
+    transform: none;
+    width: auto;
+    margin: 1rem; /* keep some spacing from edges */
+  }
+}
+
+.comp-sci{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+/* shared sizing and glow for comp-sci/hackathon images */
+.comp-sci img,
+.comp-sci-image,
+.compi-sci-image,
+.hackathon-img {
+  width: clamp(120px, 20vw, 280px); /* scales between 120px and 280px */
+  height: auto; /* preserve aspect ratio */
+  display: block;
+  object-fit: cover; /* crop nicely if container changes */
+
+  /* soft glow + subtle drop shadow */
+  box-shadow: 0 6px 18px rgba(90, 18, 95, 0.22),
+              0 0 18px rgb(141, 4, 148);
+  border-radius: 10px;
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+/* keep the existing transform-based positioning for each image */
+.comp-sci-image {
+  transform: translate(120%, -70%);
+}
+
+.hackathon-img{
+  transform: translate(190%, -70%);
+}
+
+.digicam{
+    position: absolute;
+    top: 150%;
+    width: clamp(120px, 20vw, 280px); /* scales between 120px and 280px */
+    height: auto; /* preserve aspect ratio */
+    display: block;
+     
+}
+
+
 
 

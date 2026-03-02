@@ -13,7 +13,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
-  width: 60%;
+  width: 60;
   height: auto;
   opacity: 0.9;
   z-index: -1;
@@ -31,4 +31,8 @@ body{
 .read-the-docs {
   /* muted dark text that contrasts the pink background */
   color: rgba(33,53,71,0.6);
+}
+
+.judith-face{
+  height: 10%;
 }
